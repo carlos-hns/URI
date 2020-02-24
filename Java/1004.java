@@ -11,11 +11,11 @@ public class Main {
 
 		Scanner keyboard = new Scanner(System.in);
 		
-		Integer A = keyboard.nextInt();
-		Integer B = keyboard.nextInt();
-		Integer PROD = A * B; 
+		Double A = keyboard.nextDouble();
+		Double B = keyboard.nextDouble();
+		Double MEDIA = (A * 3.5) + (B * 7.5) / 11.0; 
 	
-		System.out.println("PROD = " + PROD);
+		System.out.println("PROD = " + String.format("%.5f", MEDIA));
 		keyboard.close();
 	}
 }
